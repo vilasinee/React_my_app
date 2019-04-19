@@ -10,7 +10,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,3 +31,149 @@
     transform: rotate(360deg);
   }
 }
+
+.app {
+  padding: 20px 5px;
+  background-color: #333;
+  color: #F1F1F1;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.app .left {
+  display: inline-block;
+  width: 38%;
+/*    width: calc(38% - 3px);
+  border-right: 3px solid gray; */
+}
+
+.app .right {
+  display: inline-block;
+/*  width: 62%; */
+  width: calc(62% - 3px);
+  border-left: 3px solid gray; 
+  vertical-align: top;
+}
+
+
+.basicInfo {
+  padding: 10px 20px;
+}
+
+.basicInfo .contact {
+  margin-bottom: 10px;
+}
+
+.basicInfo .socialIcons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.title {
+  padding-bottom: 10px;
+  border-bottom: 3px solid #e5ab0d;
+}
+
+.basicInfo .profileImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.basicInfo .label {
+  width: 100px;
+}
+
+.basicInfo .p {
+  display: inline-block;
+  margin: 5px 0;
+}
+
+p {
+  font-size: 14px;
+}
+
+.profile {
+    padding: 10px 20px;
+}
+
+.interests {
+  padding: 10px 20px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.star {
+  display: inline-block;
+  color: #e5ab0d;
+}
+
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: .75em;
+  vertical-align: -15%;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-star-o:before {
+  content: "\F006";
+}
+
+.profile .exHeader .exTitle {
+  display: inline-block;
+  width: calc(100% - 150px);
+}
+
+.profile .exHeader .exTime {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+  color: #7A7A7A;
+  vertical-align: top;
+  padding-top: 5px;
+}
+
+.profile .exHeader .exSub {
+  margin-left:2em
+}
+
+.profile .icons {
+  text-align: center;
+}
+
+.profile .interestList {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  .app {
+    display: flex;
+    flex-direction: row;
+  }
+  .app .left {
+    display: flex;
+    flex-direction: row;
+    width: 38%;
+/*    width: calc(38% - 3px);
+    border-right: 3px solid gray; */
+  }
+  .app .right {
+    display: flex;
+    flex-direction: row;
+    width: 62%;
+    vertical-align: top;
+  }
+}
+
